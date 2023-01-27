@@ -14,7 +14,7 @@ export const WeatherCard = ({ weather, temperature }) => {
             <div className='weather__body'>
                 <div className='weather__imgItem'>
                     <img src={`http://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt={weather?.name} />
-                    <h2><i className="fal fa-thermometer-half"></i> {isCelsius ? temperature?.celsius + ' C°' : temperature?.farenheit + ' F°' }</h2>
+                    <h2><i className="fal fa-thermometer-half"></i> {isCelsius ? temperature?.celsius + ' °C' : temperature?.farenheit + ' °F' }</h2>
                 </div>
                 <section className='weather__descItem'>
                     <h3>"{weather?.weather[0].description}"</h3>
