@@ -5,8 +5,6 @@ export const WeatherCard = ({ weather, temperature }) => {
     const [isCelsius, setisCelsius] = useState(true)
     const handleClick = () => setisCelsius(!isCelsius)
 
-    console.log(weather);
-
     return (
         <article className='weather__card'>
             <h1 className='weather__title'>Weather App</h1>
